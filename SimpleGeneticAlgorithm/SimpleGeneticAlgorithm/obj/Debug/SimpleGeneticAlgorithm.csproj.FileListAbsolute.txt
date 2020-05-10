@@ -1,0 +1,7 @@
+C:\Users\Marcin\source\repos\SimpleGeneticAlgorithm\SimpleGeneticAlgorithm\bin\Debug\SimpleGeneticAlgorithm.exe.config
+C:\Users\Marcin\source\repos\SimpleGeneticAlgorithm\SimpleGeneticAlgorithm\bin\Debug\SimpleGeneticAlgorithm.exe
+C:\Users\Marcin\source\repos\SimpleGeneticAlgorithm\SimpleGeneticAlgorithm\bin\Debug\SimpleGeneticAlgorithm.pdb
+C:\Users\Marcin\source\repos\SimpleGeneticAlgorithm\SimpleGeneticAlgorithm\obj\Debug\SimpleGeneticAlgorithm.csprojAssemblyReference.cache
+C:\Users\Marcin\source\repos\SimpleGeneticAlgorithm\SimpleGeneticAlgorithm\obj\Debug\SimpleGeneticAlgorithm.csproj.CoreCompileInputs.cache
+C:\Users\Marcin\source\repos\SimpleGeneticAlgorithm\SimpleGeneticAlgorithm\obj\Debug\SimpleGeneticAlgorithm.exe
+C:\Users\Marcin\source\repos\SimpleGeneticAlgorithm\SimpleGeneticAlgorithm\obj\Debug\SimpleGeneticAlgorithm.pdb
