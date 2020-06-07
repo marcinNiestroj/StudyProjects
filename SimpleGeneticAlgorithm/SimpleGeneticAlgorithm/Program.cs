@@ -43,17 +43,16 @@ namespace SimpleGeneticAlgorithm
                 populationIntValues.Add(random.Next(256));
             }
             Console.WriteLine("Wysolosowano populacje");
+            streamWriter.WriteLine("MaxOsobnik     F(x)MAX");
 
             //iteracje
-            for (int iterationNumber = 0; iterationNumber <= numberOfRuns; iterationNumber++)
+            for (int iterationNumber = 1; iterationNumber <= numberOfRuns; iterationNumber++)
             {
                 double maxFxValue = 0;
                 int maxValue = 0;
 
                 Console.WriteLine("Iteracja nr: " + iterationNumber);
                 Console.WriteLine();
-                streamWriter.WriteLine("Iteracja nr: " + iterationNumber);
-                streamWriter.WriteLine();
 
                 //populacje
                 for (int populationNumber = 1; populationNumber < numberOfPopulations; populationNumber++)
@@ -63,14 +62,12 @@ namespace SimpleGeneticAlgorithm
                     List<StringBuilder> populationByteValues = toByteConverter.ConvertIntToByte(populationIntValues);
 
                     Console.WriteLine("Populacja w bajtach: ");
-                    streamWriter.WriteLine("Populacja w bajtach: ");
+                    
                     foreach (StringBuilder byteValue in populationByteValues)
                     {
                         Console.WriteLine(byteValue);
-                        streamWriter.WriteLine(byteValue);
                     }
                     Console.WriteLine();
-                    streamWriter.WriteLine();
 
                     //Losowe rozmieszczenie elementów na liście
                     List<StringBuilder> populationByteValuesRandom = new List<StringBuilder>();
@@ -167,14 +164,12 @@ namespace SimpleGeneticAlgorithm
                     finalSubjects.Sort(fxObjectComparer);
 
                     Console.WriteLine("Końcowa populacja: ");
-                    streamWriter.WriteLine("Końcowa populacja: ");
+                    
                     foreach (FxObject subject in finalSubjects)
                     {
                         Console.WriteLine(subject.FxValue.ToString() + " -> " + subject.FxRate.ToString());
-                        streamWriter.WriteLine(subject.FxValue.ToString() + " -> " + subject.FxRate.ToString());
                     }
                     Console.WriteLine();
-                    streamWriter.WriteLine();
 
                     int finalListLength = finalSubjects.Count;
                     maxFxValue = finalSubjects[finalListLength - 1].FxRate;
@@ -185,18 +180,15 @@ namespace SimpleGeneticAlgorithm
                     Console.WriteLine("Osobnik o najwyższej funkcji przystosowania to: " + maxValue);
                     Console.WriteLine();
 
-                    streamWriter.WriteLine("Wartości końcowe populacji:");
-                    streamWriter.WriteLine("Wartość najwyższa funkcji przystosowania " + maxFxValue);
-                    streamWriter.WriteLine("Osobnik o najwyższej funkcji przystosowania to: " + maxValue);
-                    streamWriter.WriteLine();
                 }
                 Console.WriteLine("Koniec iteracji nr " + iterationNumber);
                 Console.WriteLine("-------------------------------------------------------");
                 Console.WriteLine();
-                streamWriter.WriteLine("Koniec iteracji nr " + iterationNumber);
-                streamWriter.WriteLine("-------------------------------------------------------");
-                streamWriter.WriteLine();
+                streamWriter.WriteLine(maxValue + " -> " + maxFxValue);
+
             }
+            streamWriter.WriteLine();
+            streamWriter.WriteLine("-------------------------------------------------------");
             streamWriter.Close();
             Console.ReadKey();
         }
