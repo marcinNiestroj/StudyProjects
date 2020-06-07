@@ -11,7 +11,7 @@ namespace SimpleGeneticAlgorithm
     {
         public static Random random = new Random();
         private static string folder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        public static StreamWriter streamWriter = new StreamWriter(folder + @"\SimpleGeneticAlgorithmMN.txt");
+        public static StreamWriter streamWriter = new StreamWriter(folder + @"\SimpleGeneticAlgorithmMN-wyniki.txt");
         static void Main(string[] args)
         {
 
