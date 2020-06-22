@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coins
+  - Germ
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - Background
   - Land
   - BackLand
-  - 
-  - 
+  - Coins
+  - Forground
   - 
   - 
   - 
@@ -39,15 +40,27 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3097904099
+    locked: 0
+  - name: BackLand
+    uniqueID: 1268736255
+    locked: 0
+  - name: Land
+    uniqueID: 2743634661
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Player
     uniqueID: 671064071
     locked: 0
-  - name: BackLAnd
-    uniqueID: 1268736255
+  - name: ForLand
+    uniqueID: 308819289
     locked: 0
-  - name: Background
-    uniqueID: 3097904099
+  - name: Coins
+    uniqueID: 3376149659
+    locked: 0
+  - name: UI
+    uniqueID: 3136351747
     locked: 0

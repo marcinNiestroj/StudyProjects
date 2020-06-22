@@ -7,8 +7,6 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
 
-    //public float speed;
-    //public float sprint = 60f;
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     bool jump = false;
@@ -19,14 +17,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            //speed = runSpeed + sprint;
-            //horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
             runSpeed = 60f;
         }
         else
         {
-            //speed = runSpeed;
-            //horizontalMove = Input.GetAxisRaw("Horizontal") * speed;
             runSpeed = 40f;
         }
 
